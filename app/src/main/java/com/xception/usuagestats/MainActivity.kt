@@ -19,6 +19,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         findViewById<Button>(R.id.stats_btn).setOnClickListener {
+            //call one of the method below
             UStats.printCurrentUsageStatus(this@MainActivity)
             UStats.getStats(this)
         }
